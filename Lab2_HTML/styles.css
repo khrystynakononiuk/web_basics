@@ -1,0 +1,27 @@
+/* Основний стиль для обох сторінок */
+body {
+  background-color: #decaf3; /* ніжно-фіолетовий фон */
+  color: #000;               /* чорний текст */
+  font-family: Arial, sans-serif;
+  margin: 30px;
+}
+
+/* Заголовки */
+h1, h2 {
+  color: #000;
+}
+
+/* Посилання */
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #e67e22; /* помаранчевий при наведенні */
+}
+
+/* Зображення */
+img {
+  border-radius: 8px; /* трішки округлені кути для краси */
+}
