@@ -1,0 +1,51 @@
+<h1>Моя перша HTML-форма</h1>
+
+<form action="https://httpbin.org/get" method="get">
+  <label for="user_name">Ім’я:</label>
+  <input type="text" id="user_name" name="user_name"><br><br>
+
+  <label for="user_birthdate">Дата народження:</label>
+  <input type="date" id="user_birthdate" name="user_birthdate"><br><br>
+
+  <label>Імейл:
+    <input type="email" name="user_email">
+  </label><br><br>
+
+  <label for="user_message">Повідомлення:</label><br>
+  <textarea id="user_message" name="user_message" rows="4" cols="40"></textarea><br><br>
+  <!-- Чекбокси (улюблені напої) -->
+  <fieldset>
+    <legend>Ваші улюблені напої:</legend>
+    <label><input type="checkbox" name="drink" value="coffee"> Кава</label><br>
+    <label><input type="checkbox" name="drink" value="tea"> Чай</label><br>
+    <label><input type="checkbox" name="drink" value="juice"> Сік</label><br>
+    <label><input type="checkbox" name="drink" value="water"> Вода</label>
+  </fieldset>
+  <br>
+
+  <!-- Радіокнопки (національність) -->
+  <fieldset>
+    <legend>Моя національність:</legend>
+    <label><input type="radio" name="nationality" value="українець"> Українець</label><br>
+    <label><input type="radio" name="nationality" value="поляк"> Поляк</label><br>
+    <label><input type="radio" name="nationality" value="німець"> Кореєць</label>
+  </fieldset>
+  <br>
+
+  <input type="submit" value="Надіслати">
+  <input type="reset" value="Очистити">
+</form>
+
+<hr>
+
+  <!-- Адаптивне зображення -->
+  <h2>Демонстраційне зображення</h2>
+  <picture>
+    <!-- Зображення для мобільних пристроїв -->
+    <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+    <!-- Зображення для великих екранів -->
+    <source media="(min-width: 469px)" srcset="https://picsum.photos/1000/400">
+    <!-- Базове зображення -->
+    <img src="https://picsum.photos/800/600" alt="Демонстраційне зображення">
+  </picture>
+
