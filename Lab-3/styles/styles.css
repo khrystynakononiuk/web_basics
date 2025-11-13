@@ -1,13 +1,37 @@
+/* Основні стилі для текстових елементів */
 i, em, span, b, strong {
     color: green;
     text-decoration: underline;
 }
 
+/* Межі для списків */
 ol, ul {
     border: 1px solid lightcoral;
 }
 
+/* Оформлення зображень */
 img {
     width: 100%;
     max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Градієнтний і м’який фон */
+body {
+    background: radial-gradient(circle at center, #fce4ec 0%, #f8bbd0 50%, #f3e5f5 100%);
+    font-family: "Segoe UI", sans-serif;
+    margin: 30px;
+}
+
+/* Додатково: стилізація заголовків */
+h1 {
+    text-align: center;
+    color: red;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
 }
